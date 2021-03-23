@@ -1,0 +1,185 @@
+div {
+  display: inline-block;
+}
+
+.row {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.circle1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  font-size: 50px;
+  line-height: 150px;
+  color: #fff;
+  text-align: center;
+  background: blue;
+}
+
+.circle2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  font-size: 50px;
+  line-height: 150px;
+  color: #fff;
+  text-align: center;
+  background: purple;
+}
+
+.circle3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  font-size: 50px;
+  line-height: 150px;
+  color: #fff;
+  text-align: center;
+  background: pink;
+}
+
+.circle4 {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  font-size: 50px;
+  line-height: 180px;
+  color: black;
+  text-align: center;
+  background: yellow;
+}
+
+.circle5 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  font-size: 50px;
+  line-height: 200px;
+  color: #fff;
+  text-align: center;
+  background: black;
+}
+
+.square1 {
+  width: 200px;
+  height: 200px;
+  background: orange;
+  line-height: 200px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.square2 {
+  width: 150px;
+  height: 150px;
+  background: pink;
+  line-height: 150px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+.square3 {
+  width: 140px;
+  height: 140px;
+  background: yellow;
+  line-height: 140px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.square4 {
+  width: 160px;
+  height: 160px;
+  background: red;
+  line-height: 160px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+.square5 {
+  width: 200px;
+  height: 200px;
+  background: purple;
+  line-height: 200px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+
+.btn-holder {
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  /* flex: 1 0; */
+  width: 200px;
+  height: 80px;
+  background: green;
+  border-radius: 50px;
+  font-size: 20px;
+  color: white;
+  border: 3px solid grey;
+}
+
+#kostenurka {
+  background: pink;
+}
+
+#kostenurka:hover {
+  color: black;
+}
+
+#maimunka {
+  background: yellow;
+  color: black;
+}
+
+#ku4e {
+  background: purple;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  color: pink;
+}
+
+.images-holder {
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image-rotation {
+    width: 120px;
+    height: 120px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+.image-rotation-reverse {
+    width: 120px;
+    height: 120px;
+    -webkit-animation:spin-reverse 4s linear infinite;
+    -moz-animation:spin-reverse 4s linear infinite;
+    animation:spin-reverse 4s linear infinite;
+}
+
+@-moz-keyframes spin-reverse { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin-reverse { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin-reverse { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }

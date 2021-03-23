@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Circles</title>
+    <link rel="stylesheet" href="./circles.css">
+  </head>
+  <body>
+    <!-- first row -->
+    <div class="row">
+      <div class="circle1">1</div>
+      <div class="circle2">2</div>
+      <div class="circle3">3</div>
+      <div class="circle4">4</div>
+      <div class="circle5">5</div>
+    </div>
+    <!-- second row -->
+    <div class="row">
+      <div class="square1">1</div>
+      <div class="square2">2</div>
+      <div class="square3">3</div>
+      <div class="square4">4</div>
+      <div class="square5">5</div>
+    </div>
+
+    <!-- images holder -->
+    <div class="images-holder">
+      <!-- cat -->
+      <img class="image" src="http://i.stack.imgur.com/pC1Tv.jpg" alt="" width="120" height="120">
+
+      <!-- kostenurka -->
+      <img class="image3" src="http://mreja.bg/userfiles/content/205497/original/kostenurka-na-344-godini-umria-v-kralski-dvorec-v-nigeriia.jpg" alt="" width="120" height="120">
+
+      <!-- maimunka -->
+      <img class="image5" src="https://lh3.googleusercontent.com/proxy/LIuC93g07A7BvzBaRLc87vWuVhjfLyRVkF1PX2Im5WzDrkOsrIAQme82BYNkSF6tl_u9asicI32ZRDbH5qtB5rOj2zqA51pN2XwYGdlhwefwREMAtQ" alt="" width="120" height="120">
+
+      <!-- dog -->
+      <img class="image2" src="https://images.theconversation.com/files/319375/original/file-20200309-118956-1cqvm6j.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop" alt="" width="120" height="120">
+    </div>
+
+    <!-- buttons -->
+    <div class="btn-holder">
+      <button class="btn" id="kotka" type="button">Kotka</button>
+      <button class="btn" id="kostenurka" type="button">Kostenurka</button>
+      <button class="btn" id="maimunka" type="button">Maimunka</button>
+      <button class="btn" id="ku4e" type="button">Ku4e</button>
+    </div>
+
+  </body>
+  <script type="text/javascript">
+    var btn_kotka = document.getElementById('kotka');
+    var itemToInterractWith_kotka = document.getElementsByClassName('image')[0];
+
+    var btn_ku4e = document.getElementById('ku4e');
+    var itemToInterractWith_ku4e = document.getElementsByClassName('image2')[0];
+
+    var btn_kostenurka = document.getElementById('kostenurka');
+    var itemToInterractWith_kostenurka = document.getElementsByClassName('image3')[0];
+
+    var btn_maimunka = document.getElementById('maimunka');
+    var itemToInterractWith_maimunka = document.getElementsByClassName('image5')[0];
+
+    btn_kotka.addEventListener('click', () => {
+      // Toggle hide/show item
+      // if (itemToInterractWith.style.display === "none") {
+      //     itemToInterractWith.style.display = "inline-block";
+      //   } else {
+      //     itemToInterractWith.style.display = "none";
+      //   }
+
+      // detach item and add padding
+      // if (itemToInterractWith.style.marginTop === '0px') {
+      //   itemToInterractWith.style.marginTop = '50px';
+      //   itemToInterractWith.style.display = 'block';
+      // } else {
+      //   itemToInterractWith.style.marginTop = '0px';
+      //   itemToInterractWith.style.display = 'inline-block';
+      // }
+
+      // rotate
+      if (itemToInterractWith_kotka.classList.contains('image-rotation')) {
+        itemToInterractWith_kotka.classList.remove('image-rotation');
+      } else {
+        itemToInterractWith_kotka.classList.add('image-rotation');
+      }
+
+      })
+
+      btn_ku4e.addEventListener('click', () => {
+        if (itemToInterractWith_ku4e.classList.contains('image-rotation-reverse')) {
+          itemToInterractWith_ku4e.classList.remove('image-rotation-reverse');
+        } else {
+          itemToInterractWith_ku4e.classList.add('image-rotation-reverse');
+        }
+        })
+
+      btn_kostenurka.addEventListener('click', () => {
+        if (itemToInterractWith_kostenurka.classList.contains('image-rotation')) {
+          itemToInterractWith_kostenurka.classList.remove('image-rotation');
+        } else {
+          itemToInterractWith_kostenurka.classList.add('image-rotation');
+        }
+        })
+
+      btn_maimunka.addEventListener('click', () => {
+        if (itemToInterractWith_maimunka.classList.contains('image-rotation-reverse')) {
+          itemToInterractWith_maimunka.classList.remove('image-rotation-reverse');
+        } else {
+          itemToInterractWith_maimunka.classList.add('image-rotation-reverse');
+        }
+        })
+
+  </script>
+</html>
