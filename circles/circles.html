@@ -23,7 +23,7 @@
       <div class="square5">5</div>
     </div>
 
-    <!-- images holder -->
+    <!-- images holder first row -->
     <div class="images-holder">
       <!-- cat -->
       <img class="image" src="http://i.stack.imgur.com/pC1Tv.jpg" alt="" width="120" height="120">
@@ -38,12 +38,35 @@
       <img class="image2" src="https://images.theconversation.com/files/319375/original/file-20200309-118956-1cqvm6j.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop" alt="" width="120" height="120">
     </div>
 
-    <!-- buttons -->
+    <!-- buttons first row -->
     <div class="btn-holder">
       <button class="btn" id="kotka" type="button">Kotka</button>
       <button class="btn" id="kostenurka" type="button">Kostenurka</button>
       <button class="btn" id="maimunka" type="button">Maimunka</button>
       <button class="btn" id="ku4e" type="button">Ku4e</button>
+    </div>
+
+    <!-- images holder second row -->
+    <div class="images-holder">
+      <!-- elephant -->
+      <img class="image-slon4e" src="https://assets.nrdc.org/sites/default/files/styles/full_content--retina/public/media-uploads/wlds43_654640_2400.jpg?itok=LbhnLIk9" alt="" width="120" height="120">
+
+      <!-- pate -->
+      <img class="image-pate" src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg" alt="" width="120" height="120">
+
+      <!-- maimunka -->
+      <img class="image-pile" src="https://i.pinimg.com/280x280_RS/74/8f/ed/748fed623a6fd9508c6be4ebb6c32f38.jpg" alt="" width="120" height="120">
+
+      <!-- dog -->
+      <img class="image-krava" src="https://i.pinimg.com/originals/03/0b/07/030b079433b30393aba752ebd66a4e56.jpg" alt="" width="120" height="120">
+    </div>
+
+    <!-- buttons second row -->
+    <div class="btn-holder">
+      <button class="btn" id="slon4e" type="button">Slon4e</button>
+      <button class="btn" id="pate" type="button">Pate</button>
+      <button class="btn" id="pile" type="button">Pile</button>
+      <button class="btn" id="krava" type="button">Krava</button>
     </div>
 
   </body>
@@ -59,6 +82,19 @@
 
     var btn_maimunka = document.getElementById('maimunka');
     var itemToInterractWith_maimunka = document.getElementsByClassName('image5')[0];
+
+    // second row
+    var btn_slon4e = document.getElementById('slon4e');
+    var itemToInterractWith_slon4e = document.getElementsByClassName('image-slon4e')[0];
+
+    var btn_pate = document.getElementById('pate');
+    var itemToInterractWith_pate = document.getElementsByClassName('image-pate')[0];
+
+    var btn_pile = document.getElementById('pile');
+    var itemToInterractWith_pile = document.getElementsByClassName('image-pile')[0];
+
+    var btn_krava = document.getElementById('krava');
+    var itemToInterractWith_krava = document.getElementsByClassName('image-krava')[0];
 
     btn_kotka.addEventListener('click', () => {
       // Toggle hide/show item
@@ -78,12 +114,11 @@
       // }
 
       // rotate
-      if (itemToInterractWith_kotka.classList.contains('image-rotation')) {
-        itemToInterractWith_kotka.classList.remove('image-rotation');
-      } else {
-        itemToInterractWith_kotka.classList.add('image-rotation');
-      }
-
+        if (itemToInterractWith_kotka.classList.contains('image-rotation')) {
+          itemToInterractWith_kotka.classList.remove('image-rotation');
+        } else {
+          itemToInterractWith_kotka.classList.add('image-rotation');
+        }
       })
 
       btn_ku4e.addEventListener('click', () => {
@@ -92,7 +127,7 @@
         } else {
           itemToInterractWith_ku4e.classList.add('image-rotation-reverse');
         }
-        })
+      })
 
       btn_kostenurka.addEventListener('click', () => {
         if (itemToInterractWith_kostenurka.classList.contains('image-rotation')) {
@@ -100,7 +135,7 @@
         } else {
           itemToInterractWith_kostenurka.classList.add('image-rotation');
         }
-        })
+      })
 
       btn_maimunka.addEventListener('click', () => {
         if (itemToInterractWith_maimunka.classList.contains('image-rotation-reverse')) {
@@ -108,7 +143,40 @@
         } else {
           itemToInterractWith_maimunka.classList.add('image-rotation-reverse');
         }
-        })
+      })
+
+        // second row
+      btn_slon4e.addEventListener('click', () => {
+        if (itemToInterractWith_slon4e.classList.contains('image-rotation')) {
+          itemToInterractWith_slon4e.classList.remove('image-rotation');
+        } else {
+          itemToInterractWith_slon4e.classList.add('image-rotation');
+        }
+      })
+
+      btn_pate.addEventListener('click', () => {
+        if (itemToInterractWith_pate.classList.contains('image-rotation')) {
+          itemToInterractWith_pate.classList.remove('image-rotation');
+        } else {
+          itemToInterractWith_pate.classList.add('image-rotation');
+        }
+      })
+
+      btn_pile.addEventListener('click', () => {
+        if (itemToInterractWith_pile.classList.contains('image-rotation-reverse')) {
+          itemToInterractWith_pile.classList.remove('image-rotation-reverse');
+        } else {
+          itemToInterractWith_pile.classList.add('image-rotation-reverse');
+        }
+      })
+
+      btn_krava.addEventListener('click', () => {
+        if (itemToInterractWith_krava.classList.contains('image-rotation-reverse')) {
+          itemToInterractWith_krava.classList.remove('image-rotation-reverse');
+        } else {
+          itemToInterractWith_krava.classList.add('image-rotation-reverse');
+        }
+      })
 
   </script>
 </html>

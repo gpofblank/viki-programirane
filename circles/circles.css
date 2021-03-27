@@ -130,20 +130,20 @@ div {
   border: 3px solid grey;
 }
 
-#kostenurka {
+#kostenurka, #pate {
   background: pink;
 }
 
-#kostenurka:hover {
+#kostenurka:hover, #pate:hover {
   color: black;
 }
 
-#maimunka {
+#maimunka, #pile {
   background: yellow;
   color: black;
 }
 
-#ku4e {
+#ku4e, #krava {
   background: purple;
 }
 
