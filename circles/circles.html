@@ -69,6 +69,27 @@
       <button class="btn" id="krava" type="button">Krava</button>
     </div>
 
+    <!-- images holder third row -->
+    <div class="images-holder">
+      <!-- kon4e -->
+      <img class="image-kon4e" src="https://newbaby.bg/wp-content/uploads/2019/02/Lyulka-konche-Moni-Chipper-2-v-1-1.jpg" alt="" width="120" height="120">
+
+      <!-- ribka -->
+      <img class="image-ribka" src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM2NTI5fQ" alt="" width="120" height="120">
+
+      <!-- kote -->
+      <img class="image-kote" src="https://image.freepik.com/free-photo/cute-baby-cat-white-background_44074-3663.jpg" alt="" width="120" height="120">
+
+    </div>
+
+    <!-- buttons third row -->
+    <div class="btn-holder">
+      <button class="btn" id="kon4e" type="button">Kon4e</button>
+      <button class="btn" id="ribka" type="button">Ribka</button>
+      <button class="btn" id="kote" type="button">Kote</button>
+
+    </div>
+
   </body>
   <script type="text/javascript">
     var btn_kotka = document.getElementById('kotka');
@@ -95,6 +116,19 @@
 
     var btn_krava = document.getElementById('krava');
     var itemToInterractWith_krava = document.getElementsByClassName('image-krava')[0];
+
+    // third row
+    var btn_kon4e = document.getElementById('kon4e');
+    var itemToInterractWith_kon4e = document.getElementsByClassName('image-kon4e')[0];
+
+    var btn_ribka = document.getElementById('ribka');
+    var itemToInterractWith_ribka = document.getElementsByClassName('image-ribka')[0];
+
+    var btn_kote = document.getElementById('kote');
+    var itemToInterractWith_kote = document.getElementsByClassName('image-kote')[0];
+
+    // var btn_krava = document.getElementById('krava');
+    // var itemToInterractWith_krava = document.getElementsByClassName('image-krava')[0];
 
     btn_kotka.addEventListener('click', () => {
       // Toggle hide/show item
@@ -175,6 +209,30 @@
           itemToInterractWith_krava.classList.remove('image-rotation-reverse');
         } else {
           itemToInterractWith_krava.classList.add('image-rotation-reverse');
+        }
+      })
+
+      btn_kon4e.addEventListener('click', () => {
+        if (itemToInterractWith_kon4e.classList.contains('image-rotation')) {
+          itemToInterractWith_kon4e.classList.remove('image-rotation');
+        } else {
+          itemToInterractWith_kon4e.classList.add('image-rotation');
+        }
+      })
+
+      btn_ribka.addEventListener('click', () => {
+        if (itemToInterractWith_ribka.classList.contains('image-rotation')) {
+          itemToInterractWith_ribka.classList.remove('image-rotation');
+        } else {
+          itemToInterractWith_ribka.classList.add('image-rotation');
+        }
+      })
+
+      btn_kote.addEventListener('click', () => {
+        if (itemToInterractWith_kote.classList.contains('image-rotation-reverse')) {
+          itemToInterractWith_kote.classList.remove('image-rotation-reverse');
+        } else {
+          itemToInterractWith_kote.classList.add('image-rotation-reverse');
         }
       })
 
