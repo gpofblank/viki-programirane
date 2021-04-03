@@ -77,6 +77,9 @@
       <!-- ribka -->
       <img class="image-ribka" src="https://images.unsplash.com/photo-1535591273668-578e31182c4f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM2NTI5fQ" alt="" width="120" height="120">
 
+      <!-- koko6ka -->
+      <img class="image-koko6ka" src="https://e-zdravey.com/pic/home~Rf3nbb~M4w3Si_j.jpg" alt="" width="120" height="120">
+
       <!-- kote -->
       <img class="image-kote" src="https://image.freepik.com/free-photo/cute-baby-cat-white-background_44074-3663.jpg" alt="" width="120" height="120">
 
@@ -86,8 +89,24 @@
     <div class="btn-holder">
       <button class="btn" id="kon4e" type="button">Kon4e</button>
       <button class="btn" id="ribka" type="button">Ribka</button>
+      <button class="btn" id="koko6ka" type="button">Koko6ka</button>
       <button class="btn" id="kote" type="button">Kote</button>
+    </div>
 
+    <!-- images holder fourth row -->
+    <div class="images-holder">
+      <!-- elen -->
+      <img class="image-elen" src="https://www.alaskawildlife.org/wp-content/uploads/2019/01/AWCC-Reindeer-Cow-Calf-April-2018-2.jpg" alt="" width="120" height="120">
+
+      <!-- me4oPuh -->
+      <img class="image-me4oPuh" src="https://www.manager.bg/sites/default/files/styles/page_article/public/mainimages/%D0%BC%D0%B5%D1%87%D0%BE_%D0%BF%D1%83%D1%85_1_7e800_14791705_0.jpg?itok=w50PgsAg" alt="" width="120" height="120">
+
+    </div>
+
+    <!-- buttons fourth row -->
+    <div class="btn-holder">
+      <button class="btn" id="elen" type="button">Elen</button>
+      <button class="btn" id="me4oPuh" type="button">Me4o Puh</button>
     </div>
 
   </body>
@@ -124,8 +143,18 @@
     var btn_ribka = document.getElementById('ribka');
     var itemToInterractWith_ribka = document.getElementsByClassName('image-ribka')[0];
 
+    var btn_koko6ka = document.getElementById('koko6ka');
+    var itemToInterractWith_koko6ka = document.getElementsByClassName('image-koko6ka')[0];
+
     var btn_kote = document.getElementById('kote');
     var itemToInterractWith_kote = document.getElementsByClassName('image-kote')[0];
+
+    // fourth row
+    var btn_elen = document.getElementById('elen');
+    var itemToInterractWith_elen = document.getElementsByClassName('image-elen')[0];
+
+    var btn_me4oPuh = document.getElementById('me4oPuh');
+    var itemToInterractWith_me4oPuh = document.getElementsByClassName('image-me4oPuh')[0];
 
     // var btn_krava = document.getElementById('krava');
     // var itemToInterractWith_krava = document.getElementsByClassName('image-krava')[0];
@@ -233,6 +262,30 @@
           itemToInterractWith_kote.classList.remove('image-rotation-reverse');
         } else {
           itemToInterractWith_kote.classList.add('image-rotation-reverse');
+        }
+      })
+
+      btn_koko6ka.addEventListener('click', () => {
+        if (itemToInterractWith_koko6ka.classList.contains('image-rotation-reverse')) {
+          itemToInterractWith_koko6ka.classList.remove('image-rotation-reverse');
+        } else {
+          itemToInterractWith_koko6ka.classList.add('image-rotation-reverse');
+        }
+      })
+
+      btn_elen.addEventListener('click', () => {
+        if (itemToInterractWith_elen.classList.contains('image-rotation')) {
+          itemToInterractWith_elen.classList.remove('image-rotation');
+        } else {
+          itemToInterractWith_elen.classList.add('image-rotation');
+        }
+      })
+
+      btn_me4oPuh.addEventListener('click', () => {
+        if (itemToInterractWith_me4oPuh.classList.contains('image-rotation')) {
+          itemToInterractWith_me4oPuh.classList.remove('image-rotation');
+        } else {
+          itemToInterractWith_me4oPuh.classList.add('image-rotation');
         }
       })
 

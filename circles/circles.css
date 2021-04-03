@@ -130,15 +130,15 @@ div {
   border: 3px solid grey;
 }
 
-#kostenurka, #pate, #ribka {
+#kostenurka, #pate, #ribka, #me4oPuh {
   background: pink;
 }
 
-#kostenurka:hover, #pate:hover, #ribka:hover {
+#kostenurka:hover, #pate:hover, #ribka:hover, #me4oPuh:hover {
   color: black;
 }
 
-#maimunka, #pile {
+#maimunka, #pile, #koko6ka {
   background: yellow;
   color: black;
 }
