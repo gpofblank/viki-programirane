@@ -117,6 +117,18 @@
       <button class="btn" id="pelikan" type="button">Pelikan</button>
     </div>
 
+    <!-- images holder fifth row -->
+    <div class="images-holder">
+      <!-- mi6le -->
+      <img class="image-mi6le" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/%D0%9C%D1%8B%D1%88%D1%8C_2.jpg" alt="" width="120" height="120">
+
+    </div>
+
+    <!-- buttons fourth row -->
+    <div class="btn-holder">
+      <button class="btn" id="mi6le" type="button">Mi6le</button>
+    </div>
+
   </body>
   <script type="text/javascript">
     var btn_kotka = document.getElementById('kotka');
@@ -169,6 +181,10 @@
 
     var btn_pelikan = document.getElementById('pelikan');
     var itemToInterractWith_pelikan = document.getElementsByClassName('image-pelikan')[0];
+
+    // fifth row
+    var btn_mi6le = document.getElementById('mi6le');
+    var itemToInterractWith_mi6le = document.getElementsByClassName('image-mi6le')[0];
 
     // var btn_krava = document.getElementById('krava');
     // var itemToInterractWith_krava = document.getElementsByClassName('image-krava')[0];
@@ -316,6 +332,14 @@
           itemToInterractWith_pelikan.classList.remove('image-rotation-reverse');
         } else {
           itemToInterractWith_pelikan.classList.add('image-rotation-reverse');
+        }
+      })
+
+      btn_mi6le.addEventListener('click', () => {
+        if (itemToInterractWith_mi6le.classList.contains('image-rotation')) {
+          itemToInterractWith_mi6le.classList.remove('image-rotation');
+        } else {
+          itemToInterractWith_mi6le.classList.add('image-rotation');
         }
       })
 
