@@ -104,6 +104,9 @@
       <!-- zebra -->
       <img class="image-zebra" src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fac5d1a26-d95a-11e9-9cfd-b79996a387b0.jpg?crop=1814%2C1020%2C78%2C232&resize=1180" alt="" width="120" height="120">
 
+      <!-- pelikan -->
+      <img class="image-pelikan" src="https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/MA_00891650_zkqdy8.jpg" alt="" width="120" height="120">
+
     </div>
 
     <!-- buttons fourth row -->
@@ -111,6 +114,7 @@
       <button class="btn" id="elen" type="button">Elen</button>
       <button class="btn" id="me4oPuh" type="button">Me4o Puh</button>
       <button class="btn" id="zebra" type="button">Zebra</button>
+      <button class="btn" id="pelikan" type="button">Pelikan</button>
     </div>
 
   </body>
@@ -162,6 +166,9 @@
 
     var btn_zebra = document.getElementById('zebra');
     var itemToInterractWith_zebra = document.getElementsByClassName('image-zebra')[0];
+
+    var btn_pelikan = document.getElementById('pelikan');
+    var itemToInterractWith_pelikan = document.getElementsByClassName('image-pelikan')[0];
 
     // var btn_krava = document.getElementById('krava');
     // var itemToInterractWith_krava = document.getElementsByClassName('image-krava')[0];
@@ -301,6 +308,14 @@
           itemToInterractWith_zebra.classList.remove('image-rotation-reverse');
         } else {
           itemToInterractWith_zebra.classList.add('image-rotation-reverse');
+        }
+      })
+
+      btn_pelikan.addEventListener('click', () => {
+        if (itemToInterractWith_pelikan.classList.contains('image-rotation-reverse')) {
+          itemToInterractWith_pelikan.classList.remove('image-rotation-reverse');
+        } else {
+          itemToInterractWith_pelikan.classList.add('image-rotation-reverse');
         }
       })
 
