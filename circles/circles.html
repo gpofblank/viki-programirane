@@ -48,16 +48,16 @@
 
     <!-- images holder second row -->
     <div class="images-holder">
-      <!-- elephant -->
+      <!-- slon4e -->
       <img class="image-slon4e" src="https://assets.nrdc.org/sites/default/files/styles/full_content--retina/public/media-uploads/wlds43_654640_2400.jpg?itok=LbhnLIk9" alt="" width="120" height="120">
 
       <!-- pate -->
       <img class="image-pate" src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg" alt="" width="120" height="120">
 
-      <!-- maimunka -->
+      <!-- pile -->
       <img class="image-pile" src="https://i.pinimg.com/280x280_RS/74/8f/ed/748fed623a6fd9508c6be4ebb6c32f38.jpg" alt="" width="120" height="120">
 
-      <!-- dog -->
+      <!-- krava -->
       <img class="image-krava" src="https://i.pinimg.com/originals/03/0b/07/030b079433b30393aba752ebd66a4e56.jpg" alt="" width="120" height="120">
     </div>
 
@@ -122,11 +122,35 @@
       <!-- mi6le -->
       <img class="image-mi6le" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/%D0%9C%D1%8B%D1%88%D1%8C_2.jpg" alt="" width="120" height="120">
 
+      <!-- lyv -->
+      <img class="image-lyv" src="https://www.google.com/search/static/gs/animal/cover_images/m096mb_cover.png" alt="" width="120" height="120">
+
+      <!-- peperuda -->
+      <img class="image-peperuda" src="https://today.tamu.edu/wp-content/uploads/2019/03/GettyImages-184621282.jpg" alt="" width="120" height="120">
+
+      <!-- kalinka -->
+      <img class="image-kalinka" src="https://waltsorganic.com/wp-content/uploads/2017/01/lady-bugs-at-walts-organic-fertilizer.jpg" alt="" width="120" height="120">
+
     </div>
 
-    <!-- buttons fourth row -->
+    <!-- buttons fifth row -->
     <div class="btn-holder">
       <button class="btn" id="mi6le" type="button">Mi6le</button>
+      <button class="btn" id="lyv" type="button">Lyv</button>
+      <button class="btn" id="peperuda" type="button">Peperuda</button>
+      <button class="btn" id="kalinka" type="button">Kalinka</button>
+    </div>
+
+    <!-- images holder sixth row -->
+    <div class="images-holder">
+      <!-- kenguru -->
+      <img class="image-kenguru" src="https://jooinn.com/images/kenguru-3.jpg" alt="" width="120" height="120">
+
+    </div>
+
+    <!-- buttons sixth row -->
+    <div class="btn-holder">
+      <button class="btn" id="kenguru" type="button">Kenguru</button>
     </div>
 
   </body>
@@ -185,6 +209,20 @@
     // fifth row
     var btn_mi6le = document.getElementById('mi6le');
     var itemToInterractWith_mi6le = document.getElementsByClassName('image-mi6le')[0];
+
+    var btn_lyv = document.getElementById('lyv');
+    var itemToInterractWith_lyv = document.getElementsByClassName('image-lyv')[0];
+
+    var btn_peperuda = document.getElementById('peperuda');
+    var itemToInterractWith_peperuda = document.getElementsByClassName('image-peperuda')[0];
+
+    var btn_kalinka = document.getElementById('kalinka');
+    var itemToInterractWith_kalinka = document.getElementsByClassName('image-kalinka')[0];
+
+    // sixth row
+    var btn_kenguru = document.getElementById('kenguru');
+    var itemToInterractWith_kenguru = document.getElementsByClassName('image-kenguru')[0];
+
 
     // var btn_krava = document.getElementById('krava');
     // var itemToInterractWith_krava = document.getElementsByClassName('image-krava')[0];
@@ -340,6 +378,38 @@
           itemToInterractWith_mi6le.classList.remove('image-rotation');
         } else {
           itemToInterractWith_mi6le.classList.add('image-rotation');
+        }
+      })
+
+      btn_lyv.addEventListener('click', () => {
+        if (itemToInterractWith_lyv.classList.contains('image-rotation')) {
+          itemToInterractWith_lyv.classList.remove('image-rotation');
+        } else {
+          itemToInterractWith_lyv.classList.add('image-rotation');
+        }
+      })
+
+      btn_peperuda.addEventListener('click', () => {
+        if (itemToInterractWith_peperuda.classList.contains('image-rotation-reverse')) {
+          itemToInterractWith_peperuda.classList.remove('image-rotation-reverse');
+        } else {
+          itemToInterractWith_peperuda.classList.add('image-rotation-reverse');
+        }
+      })
+
+      btn_kalinka.addEventListener('click', () => {
+        if (itemToInterractWith_kalinka.classList.contains('image-rotation-reverse')) {
+          itemToInterractWith_kalinka.classList.remove('image-rotation-reverse');
+        } else {
+          itemToInterractWith_kalinka.classList.add('image-rotation-reverse');
+        }
+      })
+
+      btn_kenguru.addEventListener('click', () => {
+        if (itemToInterractWith_kenguru.classList.contains('image-rotation')) {
+          itemToInterractWith_kenguru.classList.remove('image-rotation');
+        } else {
+          itemToInterractWith_kenguru.classList.add('image-rotation');
         }
       })
 

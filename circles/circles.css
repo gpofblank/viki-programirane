@@ -130,20 +130,20 @@ div {
   border: 3px solid grey;
 }
 
-#kostenurka, #pate, #ribka, #me4oPuh {
+#kostenurka, #pate, #ribka, #me4oPuh, #lyv {
   background: pink;
 }
 
-#kostenurka:hover, #pate:hover, #ribka:hover, #me4oPuh:hover {
+#kostenurka:hover, #pate:hover, #ribka:hover, #me4oPuh:hover, #lyv:hover {
   color: black;
 }
 
-#maimunka, #pile, #koko6ka, #zebra {
+#maimunka, #pile, #koko6ka, #zebra, #peperuda {
   background: yellow;
   color: black;
 }
 
-#ku4e, #krava, #kote, #pelikan {
+#ku4e, #krava, #kote, #pelikan, #kalinka {
   background: purple;
 }
 
