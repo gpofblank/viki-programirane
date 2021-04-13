@@ -146,11 +146,15 @@
       <!-- kenguru -->
       <img class="image-kenguru" src="https://jooinn.com/images/kenguru-3.jpg" alt="" width="120" height="120">
 
+      <!-- papagal -->
+      <img class="image-papagal" src="https://iskamdaznam.com/wp-content/uploads/2017/11/vylnist-papagal.jpg" alt="" width="120" height="120">
+
     </div>
 
     <!-- buttons sixth row -->
     <div class="btn-holder">
       <button class="btn" id="kenguru" type="button">Kenguru</button>
+      <button class="btn" id="papagal" type="button">Papagal</button>
     </div>
 
   </body>
@@ -222,6 +226,9 @@
     // sixth row
     var btn_kenguru = document.getElementById('kenguru');
     var itemToInterractWith_kenguru = document.getElementsByClassName('image-kenguru')[0];
+
+    var btn_papagal = document.getElementById('papagal');
+    var itemToInterractWith_papagal = document.getElementsByClassName('image-papagal')[0];
 
 
     // var btn_krava = document.getElementById('krava');
@@ -410,6 +417,14 @@
           itemToInterractWith_kenguru.classList.remove('image-rotation');
         } else {
           itemToInterractWith_kenguru.classList.add('image-rotation');
+        }
+      })
+
+      btn_papagal.addEventListener('click', () => {
+        if (itemToInterractWith_papagal.classList.contains('image-rotation')) {
+          itemToInterractWith_papagal.classList.remove('image-rotation');
+        } else {
+          itemToInterractWith_papagal.classList.add('image-rotation');
         }
       })
 
