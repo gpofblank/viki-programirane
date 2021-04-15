@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="./circles.css">
   </head>
   <body>
-    <!-- first row -->
+
+    <!--
+     first row
     <div class="row">
       <div class="circle1">1</div>
       <div class="circle2">2</div>
@@ -14,7 +16,8 @@
       <div class="circle4">4</div>
       <div class="circle5">5</div>
     </div>
-    <!-- second row -->
+    
+    second row
     <div class="row">
       <div class="square1">1</div>
       <div class="square2">2</div>
@@ -22,6 +25,9 @@
       <div class="square4">4</div>
       <div class="square5">5</div>
     </div>
+  -->
+
+    <h1 style="text-align: center">Zoopark</h1>
 
     <!-- images holder first row -->
     <div class="images-holder">
@@ -152,6 +158,9 @@
       <!-- kateri4ka -->
       <img class="image-kateri4ka" src="http://cenimiga.com/wp-content/uploads/2016/12/KATERI4KA.jpg" alt="" width="120" height="120">
 
+      <!-- vylk -->
+      <img class="image-vylk" src="https://cdn.britannica.com/07/5207-050-5BC9F251/Gray-wolf.jpg" alt="" width="120" height="120">
+
     </div>
 
     <!-- buttons sixth row -->
@@ -159,6 +168,7 @@
       <button class="btn" id="kenguru" type="button">Kenguru</button>
       <button class="btn" id="papagal" type="button">Papagal</button>
       <button class="btn" id="kateri4ka" type="button">Kateri4ka</button>
+      <button class="btn" id="vylk" type="button">Vylk</button>
     </div>
 
   </body>
@@ -236,6 +246,9 @@
 
     var btn_kateri4ka = document.getElementById('kateri4ka');
     var itemToInterractWith_kateri4ka = document.getElementsByClassName('image-kateri4ka')[0];
+
+    var btn_vylk = document.getElementById('vylk');
+    var itemToInterractWith_vylk = document.getElementsByClassName('image-vylk')[0];
 
 
     // var btn_krava = document.getElementById('krava');
@@ -440,6 +453,14 @@
           itemToInterractWith_kateri4ka.classList.remove('image-rotation-reverse');
         } else {
           itemToInterractWith_kateri4ka.classList.add('image-rotation-reverse');
+        }
+      })
+
+      btn_vylk.addEventListener('click', () => {
+        if (itemToInterractWith_vylk.classList.contains('image-rotation-reverse')) {
+          itemToInterractWith_vylk.classList.remove('image-rotation-reverse');
+        } else {
+          itemToInterractWith_vylk.classList.add('image-rotation-reverse');
         }
       })
 
