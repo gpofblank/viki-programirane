@@ -149,12 +149,16 @@
       <!-- papagal -->
       <img class="image-papagal" src="https://iskamdaznam.com/wp-content/uploads/2017/11/vylnist-papagal.jpg" alt="" width="120" height="120">
 
+      <!-- kateri4ka -->
+      <img class="image-kateri4ka" src="http://cenimiga.com/wp-content/uploads/2016/12/KATERI4KA.jpg" alt="" width="120" height="120">
+
     </div>
 
     <!-- buttons sixth row -->
     <div class="btn-holder">
       <button class="btn" id="kenguru" type="button">Kenguru</button>
       <button class="btn" id="papagal" type="button">Papagal</button>
+      <button class="btn" id="kateri4ka" type="button">Kateri4ka</button>
     </div>
 
   </body>
@@ -229,6 +233,9 @@
 
     var btn_papagal = document.getElementById('papagal');
     var itemToInterractWith_papagal = document.getElementsByClassName('image-papagal')[0];
+
+    var btn_kateri4ka = document.getElementById('kateri4ka');
+    var itemToInterractWith_kateri4ka = document.getElementsByClassName('image-kateri4ka')[0];
 
 
     // var btn_krava = document.getElementById('krava');
@@ -425,6 +432,14 @@
           itemToInterractWith_papagal.classList.remove('image-rotation');
         } else {
           itemToInterractWith_papagal.classList.add('image-rotation');
+        }
+      })
+
+      btn_kateri4ka.addEventListener('click', () => {
+        if (itemToInterractWith_kateri4ka.classList.contains('image-rotation-reverse')) {
+          itemToInterractWith_kateri4ka.classList.remove('image-rotation-reverse');
+        } else {
+          itemToInterractWith_kateri4ka.classList.add('image-rotation-reverse');
         }
       })
 
