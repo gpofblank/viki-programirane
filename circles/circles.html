@@ -179,13 +179,20 @@
       <!-- bql tigyr -->
       <img class="image-whiteTiger" src="http://animalspages.weebly.com/uploads/1/3/1/6/13162087/3537887_orig.jpg?411" alt="" width="120" height="120">
 
+      <!-- syrna -->
+      <img class="image-syrna" src="https://i.natgeofe.com/n/05ecc07c-c0e3-4d94-9e32-93ba1e9110ed/white-tailed-deer_thumb.JPG?w=1200" alt="" width="120" height="120">
+
+      <!-- prase -->
+      <img class="image-prase" src="https://globalnews.ca/wp-content/uploads/2018/08/eshter-3.jpg?quality=85&strip=all" alt="" width="120" height="120">
+
     </div>
 
     <!-- buttons seventh row -->
     <div class="btn-holder">
       <button class="btn" id="minnieMouse" type="button">Minnie</button>
       <button class="btn" id="whiteTiger" type="button">Beli tigri</button>
-
+      <button class="btn" id="syrna" type="button">Syrna</button>
+      <button class="btn" id="prase" type="button">Prase</button>
     </div>
 
   </body>
@@ -277,6 +284,12 @@
 
     var btn_whiteTiger = document.getElementById('whiteTiger');
     var itemToInterractWith_whiteTiger = document.getElementsByClassName('image-whiteTiger')[0];
+
+    var btn_syrna = document.getElementById('syrna');
+    var itemToInterractWith_syrna = document.getElementsByClassName('image-syrna')[0];
+
+    var btn_prase = document.getElementById('prase');
+    var itemToInterractWith_prase = document.getElementsByClassName('image-prase')[0];
 
     btn_kotka.addEventListener('click', () => {
       // Toggle hide/show item
@@ -501,6 +514,22 @@
           itemToInterractWith_whiteTiger.classList.remove('image-rotation');
         } else {
           itemToInterractWith_whiteTiger.classList.add('image-rotation');
+        }
+      })
+
+      btn_syrna.addEventListener('click', () => {
+        if (itemToInterractWith_syrna.classList.contains('image-rotation-reverse')) {
+          itemToInterractWith_syrna.classList.remove('image-rotation-reverse');
+        } else {
+          itemToInterractWith_syrna.classList.add('image-rotation-reverse');
+        }
+      })
+
+      btn_prase.addEventListener('click', () => {
+        if (itemToInterractWith_prase.classList.contains('image-rotation-reverse')) {
+          itemToInterractWith_prase.classList.remove('image-rotation-reverse');
+        } else {
+          itemToInterractWith_prase.classList.add('image-rotation-reverse');
         }
       })
 
