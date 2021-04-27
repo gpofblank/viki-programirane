@@ -195,6 +195,23 @@
       <button class="btn" id="prase" type="button">Prase</button>
     </div>
 
+    <!-- images holder eighth row -->
+    <div class="images-holder">
+      <!-- nosorog -->
+      <img class="image-nosorog" src="https://www.thoughtco.com/thmb/5Rh7EaeiIgRFLHVmFiKiUB8SKZM=/1600x1200/smart/filters:no_upscale()/gi-rhinoceros-totem-56a46bf23df78cf772825b4b.jpg" alt="" width="120" height="120">
+
+      <!-- taralej -->
+      <img class="image-taralej" src="https://res.klook.com/image/upload/c_fill,w_800,h_533,f_auto/w_80,x_15,y_15,g_south_west,l_klook_water/activities/twhpwqkwugmcbwyxlfok.webp" alt="" width="120" height="120">
+
+    </div>
+
+    <!-- buttons eighth row -->
+    <div class="btn-holder">
+      <button class="btn" id="nosorog" type="button">Nosorog</button>
+      <button class="btn" id="taralej" type="button">Taralej</button>
+    </div>
+
+
   </body>
   <script type="text/javascript">
 
@@ -290,6 +307,13 @@
 
     var btn_prase = document.getElementById('prase');
     var itemToInterractWith_prase = document.getElementsByClassName('image-prase')[0];
+
+    // eighth row
+    var btn_nosorog = document.getElementById('nosorog');
+    var itemToInterractWith_nosorog = document.getElementsByClassName('image-nosorog')[0];
+
+    var btn_taralej = document.getElementById('taralej');
+    var itemToInterractWith_taralej = document.getElementsByClassName('image-taralej')[0];
 
     btn_kotka.addEventListener('click', () => {
       // Toggle hide/show item
@@ -530,6 +554,22 @@
           itemToInterractWith_prase.classList.remove('image-rotation-reverse');
         } else {
           itemToInterractWith_prase.classList.add('image-rotation-reverse');
+        }
+      })
+
+      btn_nosorog.addEventListener('click', () => {
+        if (itemToInterractWith_nosorog.classList.contains('image-rotation')) {
+          itemToInterractWith_nosorog.classList.remove('image-rotation');
+        } else {
+          itemToInterractWith_nosorog.classList.add('image-rotation');
+        }
+      })
+
+      btn_taralej.addEventListener('click', () => {
+        if (itemToInterractWith_taralej.classList.contains('image-rotation')) {
+          itemToInterractWith_taralej.classList.remove('image-rotation');
+        } else {
+          itemToInterractWith_taralej.classList.add('image-rotation');
         }
       })
 
