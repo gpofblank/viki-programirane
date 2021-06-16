@@ -130,6 +130,16 @@ div {
   border: 3px solid grey;
 }
 
+#toggle_btn {
+  width: 200px;
+  height: 80px;
+  background: black;
+  border-radius: 50px;
+  font-size: 20px;
+  color: white;
+  border: 3px solid grey;
+}
+
 #kostenurka, #pate, #ribka, #me4oPuh, #lyv, #papagal, #whiteTiger, #taralej {
   background: pink;
 }
@@ -138,7 +148,7 @@ div {
   color: black;
 }
 
-#maimunka, #pile, #koko6ka, #zebra, #peperuda, #kateri4ka, #syrna {
+#maimunka, #pile, #koko6ka, #zebra, #peperuda, #kateri4ka, #syrna, {
   background: yellow;
   color: black;
 }

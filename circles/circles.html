@@ -211,6 +211,9 @@
       <button class="btn" id="taralej" type="button">Taralej</button>
     </div>
 
+    <div class="btn-holder">
+      <button onclick="toggleRotation()" type="button" id="toggle_btn">Toggle rotation</button>
+    </div>
 
   </body>
   <script type="text/javascript">
@@ -315,6 +318,16 @@
     var btn_taralej = document.getElementById('taralej');
     var itemToInterractWith_taralej = document.getElementsByClassName('image-taralej')[0];
 
+    // rotation for all
+    function toggleRotation() {
+      const allBtns = document.getElementsByClassName('btn');
+
+      Array.from(allBtns).forEach((btn, i) => {
+        btn.click();
+      });
+    }
+
+    // event listeners
     btn_kotka.addEventListener('click', () => {
       // Toggle hide/show item
       // if (itemToInterractWith.style.display === "none") {
